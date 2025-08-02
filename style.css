@@ -14,12 +14,17 @@ header {
   text-align: center;
   padding: 4rem 1rem;
   position: relative;
+  font-family: 'Great Vibes', cursive;
 }
 
 header h1 {
-  margin: 0;
+  background-color: rgba(15, 15, 15, 0.4); /* white with 20% opacity */
+  display: inline-block; /* so background fits the text */
+  padding: 0.5rem 1rem; /* spacing around the text */
+  border-radius: 8px; /* optional: rounded corners */
+  font-weight: bold;
   font-size: 2.5rem;
-  color: white;
+  color: #ffffff; /* dark text for contrast */
 }
 /* Language Switcher */
 .language-switcher {
@@ -54,6 +59,7 @@ header h1 {
   font-size: 2.5rem;
   color: #4a3f35;
   margin: 0;
+  font-family: 'Great Vibes', cursive;
 }
 
 .gallery {
@@ -189,6 +195,7 @@ header h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #4a3f35;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* Responsive grid */
@@ -231,6 +238,7 @@ header h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #f0e7d8;
+  font-family: 'Great Vibes', cursive;
 }
 
 .nightview-grid {
@@ -298,6 +306,7 @@ header h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #4a3f35;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* Layout Container */
@@ -377,6 +386,7 @@ header h1 {
   font-size: 2.5rem;
   color: #3e3328;
   margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Layout Grid */
@@ -479,6 +489,7 @@ header h1 {
   font-size: 2.5rem;
   color: #4a3f35;
   margin-bottom: 2rem;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* Layout */
