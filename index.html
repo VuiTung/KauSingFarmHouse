@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kau Sing Farmhouse</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 data-translate="header-title">Kau Sing Farmhouse</h1>
+    <div class="language-switcher">
+      <button onclick="changeLanguage('en')">EN</button>
+      <button onclick="changeLanguage('ms')">BM</button>
+      <button onclick="changeLanguage('zh')">中文</button>
+    </div>
+  </header>
+
+  <section class="photo-gallery">
+    <h2 data-translate="gallery-title">Explore Our Stays!</h2>
+    <div class="gallery-grid">
+      <img src="Images/Facility_Other_4.jpg" alt="Gallery Image 1">
+      <img src="Images/Facility_Other_3.jpg" alt="Gallery Image 2">
+      <img src="Images/Facility_Other_5.jpg" alt="Gallery Image 3">
+      <img src="Images/Facility_Trampoline.jpg" alt="Gallery Image 4">
+      <img src="Images/Room_Outside_View_1.jpg" alt="Gallery Image 5">
+    </div>
+  </section>
+
+  <section class="nightview-gallery">
+    <h2 data-translate="night-title">Farmhouse at Night 🌙</h2>
+    <div class="nightview-grid">
+      <img src="Images/Night1.jpg" alt="Nightview 1" class="horizontal">
+      <img src="Images/Night3.jpg" alt="Nightview 2" class="horizontal">
+      <img src="Images/Night2.jpg" alt="Nightview 3" class="vertical">
+    </div>
+  </section>
+
+  <section class="room-header">
+    <h2 data-translate="rooms-title">🏠 Rooms (Weekends fill fast!)</h2>
+  </section>
+  <main class="gallery">
+    <!-- Sample card -->
+    <div class="image-card">
+      <div class="slideshow">
+        <img src="Images/Room1.1.jpg" class="slide active" alt="Room1.1">
+        <img src="Images/Room1.2.jpg" class="slide" alt="Room1.2">
+        <div class="controls">
+          <button onclick="changeSlide(this, -1)">❮</button>
+          <button onclick="changeSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="description">
+        <div class="title-price">
+          <h3 data-translate="small-room-title">Small Room</h3>
+          <span class="price" data-translate="small-room-price">RM150 per night</span>
+        </div>
+        <p><strong data-translate="small-room-max">Max 2 Pax</strong></p>
+        <p data-translate="small-room-desc">Perfect for solo travelers or couples seeking a peaceful retreat in nature. This cozy room offers a warm, calming atmosphere to unwind and recharge.</p>
+        <ul>
+          <li data-translate="small-room-bathroom">Private bathroom with hot water</li>
+          <li data-translate="small-room-blanket">Blankets & hair dryer available upon request</li>
+        </ul>
+      </div>
+    </div>
+    <div class="image-card">
+      <div class="slideshow">
+        <img src="Images/Room2.1.jpg" class="slide active" alt="Room2.1">
+        <img src="Images/Room2.2.jpg" class="slide" alt="Room2.2">
+        <div class="controls">
+          <button onclick="changeSlide(this, -1)">❮</button>
+          <button onclick="changeSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="description">
+        <div class="title-price">
+          <h3 data-translate="medium-room-a-title">Medium Room A</h3>
+          <span class="price" data-translate="medium-room-a-price">RM250 per night</span>
+        </div>
+        <p><strong data-translate="medium-room-a-max">Max 3 Pax</strong></p>
+        <p data-translate="medium-room-a-desc">Ideal for small families or friends escaping the city for a relaxing weekend. A comfortable queen-size bed
+          anchors this nature-inspired room designed for rest and reconnection.</p>
+        <ul>
+          <li data-translate="medium-room-a-bathroom">Private bathroom with hot water</li>
+          <li data-translate="medium-room-a-blanket">Blankets & Hair dryer available upon request</li>
+        </ul>
+      </div>
+    </div>
+    <div class="image-card">
+      <div class="slideshow">
+        <img src="Images/Room3.1.jpg" class="slide active" alt="Room3.1">
+        <img src="Images/Room3.2.jpg" class="slide" alt="Room3.2">
+        <div class="controls">
+          <button onclick="changeSlide(this, -1)">❮</button>
+          <button onclick="changeSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="description">
+        <div class="title-price">
+          <h3 data-translate="medium-room-b-title">Medium Room B</h3>
+          <span class="price" data-translate="medium-room-b-price">RM200 per night</span>
+        </div>
+        <p><strong data-translate="medium-room-b-max">Max 2–3 Pax</strong></p>
+        <p data-translate="medium-room-b-desc">A slightly more affordable option with all the comfort you need. Featuring a queen-size bed and space for an
+          extra mattress (additional charge), this room is perfect for friends or couples.</p>
+        <ul>
+          <li data-translate="medium-room-b-bathroom">Private bathroom with hot water</li>
+          <li data-translate="medium-room-b-blanket">Blankets & hair dryer available upon request</li>
+          <li data-translate="medium-room-b-mattress">Extra mattress available upon request (additional charge)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="image-card">
+      <div class="slideshow">
+        <img src="Images/Room4.1.jpg" class="slide active" alt="Room4.1">
+        <img src="Images/Room4.2.jpg" class="slide" alt="Room4.2">
+        <div class="controls">
+          <button onclick="changeSlide(this, -1)">❮</button>
+          <button onclick="changeSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="description">
+        <div class="title-price">
+          <h3 data-translate="deluxe-room-a-title">Deluxe Room A</h3>
+          <span class="price" data-translate="deluxe-room-a-price">RM350 per night</span>
+        </div>
+        <p><strong data-translate="deluxe-room-a-max">Max 4–6 Pax</strong></p>
+        <p data-translate="deluxe-room-a-desc">Spacious and serene, this premium room features two queen-size beds, perfect for big families, close friends,
+          or group travelers looking for a luxurious escape in nature.</p>
+        <ul>
+          <li data-translate="deluxe-room-a-bathroom">Large private bathroom with hot water</li>
+          <li data-translate="deluxe-room-a-blanket">Blankets & hair dryer available upon request</li>
+          <li data-translate="deluxe-room-a-mattress">Extra mattress available upon request (additional charge)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="image-card">
+      <div class="slideshow">
+        <img src="Images/Room5.1.jpg" class="slide active" alt="Room5.1">
+        <img src="Images/Room5.2.jpg" class="slide" alt="Room5.2">
+        <div class="controls">
+          <button onclick="changeSlide(this, -1)">❮</button>
+          <button onclick="changeSlide(this, 1)">❯</button>
+        </div>
+      </div>
+      <div class="description">
+        <div class="title-price">
+          <h3 data-translate="deluxe-room-b-title">Deluxe Room B</h3>
+          <span class="price" data-translate="deluxe-room-b-price">RM300 per night</span>
+        </div>
+        <p><strong data-translate="deluxe-room-b-max">Max 4–6 Pax</strong></p>
+        <p data-translate="deluxe-room-b-desc">Enjoy a slightly cozier version of our Deluxe experience. With two queen-size beds, this room suits families
+          and friend groups who want to relax in comfort without compromising tranquility.</p>
+        <ul>
+          <li data-translate="deluxe-room-b-bathroom">Private bathroom with hot water</li>
+          <li data-translate="deluxe-room-b-blanket">Blankets & hair dryer available upon request</li>
+          <li data-translate="deluxe-room-b-mattress">Extra mattress available upon request (additional charge)</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Duplicate and update for other cards (2–10) -->
+
+  </main>
+
+  <section class="camping-section">
+    <h2 data-translate="camping-title">🏕 Camping Life</h2>
+    <div class="camping-content">
+      <img src="Images/Facility_Camp_Site.jpg" alt="Camping site">
+      <div class="camping-info">
+        <div class="camp-price">
+          <h3 data-translate="camp-open-title">Open space campsite</h3>
+          <span data-translate="camping-price">RM20/head/night</span>
+        </div>
+        <p data-translate="camp-open-desc">Bring your own tent and sleep under the stars at our peaceful nature campsite. Surrounded by greenery and
+          fresh countryside air, the space can comfortably host 10+ tents for group or solo adventures.</p>
+        <ul>
+          <li data-translate="camp-open-water">Clean drinking water</li>
+          <li data-translate="camp-open-bathroom">Bathroom and outdoor shower access</li>
+          <li data-translate="camp-open-vibe">Quiet, chill vibes with beautiful surroundings</li>
+        </ul>
+        <p data-translate="camp-open-closing">Perfect for a calming escape, healing weekend, or a casual outdoor experience with friends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="deluxe-section">
+    <h2 data-translate="deluxe-title">🌟 Deluxe Event Space</h2>
+    <div class="deluxe-content">
+      <img src="Images/Facility_Public_Space.jpg" alt="Deluxe Left" class="deluxe-img">
+
+      <div class="deluxe-info">
+        <h3 data-translate="public-hall-title">Farmhouse Public Hall</h3>
+        <span class="deluxe-price" data-translate="deluxe-price">RM3500++ per day</span>
+        <p data-translate="event-desc">Host your dream event in a private, nature-filled venue that blends beauty and exclusivity. Whether it's a
+          wedding, birthday celebration, corporate gathering, or private party, our farmhouse offers the perfect
+          backdrop.</p>
+        <ul>
+          <li class="deluxe-li" data-translate="event-li-grounds">✅Spacious grounds</li>
+          <li class="deluxe-li" data-translate="event-li-service">✅Tailored service for your needs</li>
+          <li class="deluxe-li" data-translate="event-li-photo">✅Beautiful photo opportunities throughout the space</li>
+        </ul>
+        <p class="highlight" data-translate="event-highlight">Enjoy an <strong>exclusive experience</strong> in a quiet, countryside retreat made for
+          memorable moments.</p>
+      </div>
+
+      <img src="Images/Facility_Other_1.jpg" alt="Deluxe Right" class="deluxe-img">
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2 data-translate="contact-title">Contact Us 📬</h2>
+    <div class="contact-content">
+      <img src="Images/header.jpg" alt="Farmhouse contact image">
+      <div class="contact-info">
+        <p><strong data-translate="label-address">Address:</strong><br>
+          Jalan Kau Sing, No.4, 91000, Tawau, Sabah, Malaysia </p>
+
+        <!--<p><strong>WhatsApp:</strong> <a href="https://wa.me/+013-881-0990" target="_blank">+013-881-0990</a></p> -->
+
+        <p><strong data-translate="label-facebook">Facebook:</strong> <a href="https://www.facebook.com/KauSingResort/"
+            target="_blank">facebook.com/KauSingResort</a></p>
+      </div>
+    </div>
+  </section>
+  <button onclick="scrollToContact()" class="contact-floating-btn" data-translate="book-now">Book now</button>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+const translations = {
+  en: {
+    "header-title": "Kau Sing Farmhouse",
+    "gallery-title": "Explore Our Stays!",
+    "night-title": "Farmhouse at Night 🌙",
+    "rooms-title": "🏠 Rooms (Weekends fill fast!)",
+    "camping-title": "🏕 Camping Life",
+    "camping-price": "RM20/head/night",
+    "deluxe-title": "🌟 Deluxe Event Space",
+    "public-hall-title": "Farmhouse Public Hall",
+    "deluxe-price": "RM3500++ per day",
+    "contact-title": "Contact Us 📬",
+    "book-now": "Book now",
+    "small-room-title": "Small Room",
+    "small-room-price": "RM150 per night",
+    "small-room-max": "Max 2 Pax",
+    "small-room-desc": "Perfect for solo travelers or couples seeking a peaceful retreat in nature. This cozy room offers a warm, calming atmosphere to unwind and recharge.",
+    "small-room-bathroom": "Private bathroom with hot water",
+    "small-room-blanket": "Blankets & hair dryer available upon request",
+    "medium-room-a-title": "Medium Room A",
+    "medium-room-a-price": "RM250 per night",
+    "medium-room-a-max": "Max 3 Pax",
+    "medium-room-a-desc": "Ideal for small families or friends escaping the city for a relaxing weekend. A comfortable queen-size bed anchors this nature-inspired room designed for rest and reconnection.",
+    "medium-room-a-bathroom": "Private bathroom with hot water",
+    "medium-room-a-blanket": "Blankets & Hair dryer available upon request",
+    "medium-room-b-title": "Medium Room B",
+    "medium-room-b-price": "RM200 per night",
+    "medium-room-b-max": "Max 2–3 Pax",
+    "medium-room-b-desc": "A slightly more affordable option with all the comfort you need. Featuring a queen-size bed and space for an extra mattress (additional charge), this room is perfect for friends or couples.",
+    "medium-room-b-bathroom": "Private bathroom with hot water",
+    "medium-room-b-blanket": "Blankets & hair dryer available upon request",
+    "medium-room-b-mattress": "Extra mattress available upon request (additional charge)",
+    "deluxe-room-a-title": "Deluxe Room A",
+    "deluxe-room-a-price": "RM350 per night",
+    "deluxe-room-a-max": "Max 4–6 Pax",
+    "deluxe-room-a-desc": "Spacious and serene, this premium room features two queen-size beds, perfect for big families, close friends, or group travelers looking for a luxurious escape in nature.",
+    "deluxe-room-a-bathroom": "Large private bathroom with hot water",
+    "deluxe-room-a-blanket": "Blankets & Hair dryer available upon request",
+    "deluxe-room-a-mattress": "Extra mattress available upon request (additional charge)",
+    "deluxe-room-b-title": "Deluxe Room B",
+    "deluxe-room-b-price": "RM300 per night",
+    "deluxe-room-b-max": "Max 4–6 Pax",
+    "deluxe-room-b-desc": "Enjoy a slightly cozier version of our Deluxe experience. With two queen-size beds, this room suits families and friend groups who want to relax in comfort without compromising tranquility.",
+    "deluxe-room-b-bathroom": "Private bathroom with hot water",
+    "deluxe-room-b-blanket": "Blankets & hair dryer available upon request",
+    "deluxe-room-b-mattress": "Extra mattress available upon request (additional charge)",
+    "camp-open-title": "Open space campsite",
+    "camp-open-desc": "Bring your own tent and sleep under the stars at our peaceful nature campsite. Surrounded by greenery and fresh countryside air, the space can comfortably host 10+ tents for group or solo adventures.",
+    "camp-open-water": "Clean drinking water",
+    "camp-open-bathroom": "Bathroom and outdoor shower access",
+    "camp-open-vibe": "Quiet, chill vibes with beautiful surroundings",
+    "camp-open-closing": "Perfect for a calming escape, healing weekend, or a casual outdoor experience with friends.",
+    "event-desc": "Host your dream event in a private, nature-filled venue that blends beauty and exclusivity. Whether it's a wedding, birthday celebration, corporate gathering, or private party, our farmhouse offers the perfect backdrop.",
+    "event-li-grounds": "✅Spacious grounds",
+    "event-li-service": "✅Tailored service for your needs",
+    "event-li-photo": "✅Beautiful photo opportunities throughout the space",
+    "event-highlight": "Enjoy an <strong>exclusive experience</strong> in a quiet, countryside retreat made for memorable moments.",
+    "label-address": "Address:",
+    "label-facebook": "Facebook:"
+  },
+  ms: {
+    "header-title": "Kau Sing Farmhouse",
+    "gallery-title": "Terokai Penginapan Kami!",
+    "night-title": "Rumah Ladang pada Waktu Malam 🌙",
+    "rooms-title": "🏠 Bilik (Hujung minggu cepat penuh!)",
+    "camping-title": "🏕 Kehidupan Berkhemah",
+    "camping-price": "RM20/seorang/malam",
+    "deluxe-title": "🌟 Ruang Acara Mewah",
+    "public-hall-title": "Dewan Awam Rumah Ladang",
+    "deluxe-price": "RM3500++ sehari",
+    "contact-title": "📬 Hubungi Kami",
+    "book-now": "Tempah sekarang",
+    "small-room-title": "Bilik Kecil",
+    "small-room-price": "RM150 satu malam",
+    "small-room-max": "Maksimum 2 orang",
+    "small-room-desc": "Sesuai untuk pengembara solo atau pasangan yang mencari ketenangan di alam semula jadi. Bilik yang selesa ini menawarkan suasana hangat dan menenangkan untuk berehat dan memulihkan tenaga.",
+    "small-room-bathroom": "Bilik air peribadi dengan air panas",
+    "small-room-blanket": "Selimut & pengering rambut disediakan atas permintaan",
+    "medium-room-a-title": "Bilik Sederhana A",
+    "medium-room-a-price": "RM250 satu malam",
+    "medium-room-a-max": "Maksimum 3 orang",
+    "medium-room-a-desc": "Sesuai untuk keluarga kecil atau rakan-rakan yang ingin lari dari kesibukan kota pada hujung minggu yang santai. Katil bersaiz queen yang selesa menjadi tumpuan bilik bertemakan alam semula jadi ini, direka untuk berehat dan berhubung semula.",
+    "medium-room-a-bathroom": "Bilik air peribadi dengan air panas",
+    "medium-room-a-blanket": "Selimut & pengering rambut disediakan atas permintaan",
+    "medium-room-b-title": "Bilik Sederhana B",
+    "medium-room-b-price": "RM200 satu malam",
+    "medium-room-b-max": "Maksimum 2–3 orang",
+    "medium-room-b-desc": "Pilihan yang lebih berpatutan tetapi tetap selesa. Dilengkapi dengan katil bersaiz queen dan ruang untuk tilam tambahan (caj tambahan), bilik ini sesuai untuk rakan-rakan atau pasangan.",
+    "medium-room-b-bathroom": "Bilik air peribadi dengan air panas",
+    "medium-room-b-blanket": "Selimut & pengering rambut disediakan atas permintaan",
+    "medium-room-b-mattress": "Tilam tambahan disediakan atas permintaan (caj tambahan)",
+    "deluxe-room-a-title": "Bilik Mewah A",
+    "deluxe-room-a-price": "RM350 satu malam",
+    "deluxe-room-a-max": "Maksimum 4–6 orang",
+    "deluxe-room-a-desc": "Luas dan tenang, bilik premium ini dilengkapi dengan dua katil bersaiz queen — sesuai untuk keluarga besar, rakan rapat atau kumpulan pelancong yang mencari percutian mewah di alam semula jadi.",
+    "deluxe-room-a-bathroom": "Bilik air peribadi yang besar dengan air panas",
+    "deluxe-room-a-blanket": "Selimut & pengering rambut disediakan atas permintaan",
+    "deluxe-room-a-mattress": "Tilam tambahan disediakan atas permintaan (caj tambahan)",
+    "deluxe-room-b-title": "Bilik Mewah B",
+    "deluxe-room-b-price": "RM300 satu malam",
+    "deluxe-room-b-max": "Maksimum 4–6 orang",
+    "deluxe-room-b-desc": "Nikmati versi yang sedikit lebih selesa daripada pengalaman Deluxe kami. Dengan dua katil bersaiz queen, bilik ini sesuai untuk keluarga dan kumpulan rakan yang ingin berehat dengan selesa tanpa mengorbankan ketenangan.",
+    "deluxe-room-b-bathroom": "Bilik air peribadi dengan air panas",
+    "deluxe-room-b-blanket": "Selimut & pengering rambut disediakan atas permintaan",
+    "deluxe-room-b-mattress": "Tilam tambahan disediakan atas permintaan (caj tambahan)",
+    "camp-open-title": "Tapak Perkhemahan Terbuka",
+    "camp-open-desc": "Bawa khemah sendiri dan tidur di bawah bintang di tapak perkhemahan semula jadi kami yang tenang. Dikelilingi kehijauan dan udara segar desa, ruang ini boleh memuatkan lebih daripada 10 khemah dengan selesa — sesuai untuk pengembaraan berkumpulan atau solo.",
+    "camp-open-water": "Air minuman bersih",
+    "camp-open-bathroom": "Akses ke tandas dan pancuran mandi di luar",
+    "camp-open-vibe": "Suasana tenang dan santai dengan persekitaran yang indah",
+    "camp-open-closing": "Sesuai untuk percutian yang menenangkan, hujung minggu penyembuhan, atau pengalaman luar santai bersama rakan-rakan.",
+    "event-desc": "Anjurkan acara impian anda di lokasi persendirian yang dipenuhi alam semula jadi, gabungan keindahan dan eksklusiviti. Sama ada perkahwinan, sambutan hari jadi, perjumpaan korporat atau majlis persendirian, rumah ladang kami adalah latar sempurna.",
+    "event-li-grounds": "✅ Kawasan luas dan terbuka",
+    "event-li-service": "✅ Perkhidmatan disesuaikan mengikut keperluan anda",
+    "event-li-photo": "✅ Peluang bergambar yang cantik di seluruh kawasan",
+    "event-highlight": "Nikmati <strong>pengalaman eksklusif</strong> di tempat percutian desa yang tenang dan penuh kenangan.",
+    "label-address": "Alamat:",
+    "label-facebook": "Facebook:"
+  },
+  zh: {
+    "header-title": "高升农家乐",
+    "gallery-title": "探索我们的住宿！",
+    "night-title": "夜晚的农庄 🌙",
+    "rooms-title": "🏠 房间（周末爆满！）",
+    "camping-title": "🏕 露营生活",
+    "camping-price": "每人每晚 RM20",
+    "deluxe-title": "🌟 豪华活动空间",
+    "public-hall-title": "农庄公共大厅",
+    "deluxe-price": "每天 RM3500++",
+    "contact-title": "📬 联系我们",
+    "book-now": "立即预订",
+    "small-room-title": "小房间",
+    "small-room-price": "每晚 RM150",
+    "small-room-max": "最多 2 人",
+    "small-room-desc": "非常适合独行旅客或情侣寻找宁静的大自然休憩地。这间舒适的房间营造温暖、宁静的氛围，让您放松充电。",
+    "small-room-bathroom": "带热水的私人浴室",
+    "small-room-blanket": "可应要求提供毛毯和吹风机",
+    "medium-room-a-title": "中型房 A",
+    "medium-room-a-price": "每晚 RM250",
+    "medium-room-a-max": "最多 3 人",
+    "medium-room-a-desc": "非常适合小家庭或朋友在周末远离城市喧嚣，享受轻松时光。舒适的双人床是这间自然风格房间的核心，专为休息与重新连结而设计。",
+    "medium-room-a-bathroom": "带热水的私人浴室",
+    "medium-room-a-blanket": "可应要求提供毛毯和吹风机",
+    "medium-room-b-title": "中型房 B",
+    "medium-room-b-price": "每晚 RM200",
+    "medium-room-b-max": "最多 2–3 人",
+    "medium-room-b-desc": "价格更实惠，但依然舒适。配有一张大床，并可加床（需额外收费），适合朋友或情侣入住。",
+    "medium-room-b-bathroom": "带热水的私人浴室",
+    "medium-room-b-blanket": "可应要求提供毛毯和吹风机",
+    "medium-room-b-mattress": "可应要求提供加床（需额外收费）",
+    "deluxe-room-a-title": "豪华房 A",
+    "deluxe-room-a-price": "每晚 RM350",
+    "deluxe-room-a-max": "最多 4–6 人",
+    "deluxe-room-a-desc": "宽敞而宁静，这间高级房配有两张大床，非常适合大家庭、亲密好友或寻找奢华自然之旅的团体旅客。",
+    "deluxe-room-a-bathroom": "带热水的大型私人浴室",
+    "deluxe-room-a-blanket": "可应要求提供毛毯和吹风机",
+    "deluxe-room-a-mattress": "可应要求提供加床（需额外收费）",
+    "deluxe-room-b-title": "豪华房 B",
+    "deluxe-room-b-price": "每晚 RM300",
+    "deluxe-room-b-max": "最多 4–6 人",
+    "deluxe-room-b-desc": "享受我们豪华体验中稍微温馨的版本。配有两张大床，非常适合想要在舒适中放松、又不失宁静氛围的家庭或朋友团体。",
+    "deluxe-room-b-bathroom": "带热水的私人浴室",
+    "deluxe-room-b-blanket": "可应要求提供毛毯和吹风机",
+    "deluxe-room-b-mattress": "可应要求提供加床（需额外收费）",
+    "camp-open-title": "开放式露营区",
+    "camp-open-desc": "自备帐篷，在宁静的大自然营地中于星空下入睡。四周环绕绿意和乡间新鲜空气，场地可舒适容纳 10 多顶帐篷，适合团体或个人露营。",
+    "camp-open-water": "干净的饮用水",
+    "camp-open-bathroom": "提供浴室和室外淋浴设施",
+    "camp-open-vibe": "安静放松的氛围，风景优美",
+    "camp-open-closing": "非常适合放松逃离、疗愈周末，或与朋友共度的轻松户外体验。",
+    "event-desc": "在私人自然场地中举办您梦想的活动，这里融合了美感与私密性。无论是婚礼、生日派对、公司聚会，还是私人宴会，我们的农庄都是完美的背景。",
+    "event-li-grounds": "✅ 宽敞的场地",
+    "event-li-service": "✅ 提供符合您需求的定制服务",
+    "event-li-photo": "✅ 整个场地均适合拍照打卡",
+    "event-highlight": "在安静的乡间度假地享受<strong>专属体验</strong>，为您创造难忘时刻。",
+    "label-address": "地址：",
+    "label-facebook": "脸书："
+  }
+};
+
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll('[data-translate]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  localStorage.setItem('language', lang); // Optional: remember choice
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('language') || 'en';
+  changeLanguage(savedLang);
+});
+
+function changeSlide(button, direction) {
+  const slideshow = button.closest('.slideshow');
+  const slides = slideshow.querySelectorAll('.slide');
+  let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+
+  slides[currentIndex].classList.remove('active');
+  let nextIndex = (currentIndex + direction + slides.length) % slides.length;
+  slides[nextIndex].classList.add('active');
+}
+
+function scrollToContact() {
+  const contactSection = document.getElementById("contact");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
