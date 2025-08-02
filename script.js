@@ -127,7 +127,7 @@ const translations = {
     "camping-title": "🏕 露营生活",
     "camping-price": "每人每晚 RM20",
     "deluxe-title": "🌟 豪华活动空间",
-    "public-hall-title": "活动场地租赁",
+    "public-hall-title": "活动场地租用",
     "deluxe-price": "每天 RM3500++",
     "contact-title": "📬 联系我们",
     "book-now": "立即预订",
