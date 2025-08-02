@@ -7,7 +7,7 @@ const translations = {
     "camping-title": "🏕 Camping Life",
     "camping-price": "RM20/head/night",
     "deluxe-title": "🌟 Deluxe Event Space",
-    "public-hall-title": "Farmhouse Public Hall",
+    "public-hall-title": "Event Space Rental",
     "deluxe-price": "RM3500++ per day",
     "contact-title": "Contact Us 📬",
     "book-now": "Book now",
@@ -56,7 +56,8 @@ const translations = {
     "event-li-photo": "✅Beautiful photo opportunities throughout the space",
     "event-highlight": "Enjoy an <strong>exclusive experience</strong> in a quiet, countryside retreat made for memorable moments.",
     "label-address": "Address:",
-    "label-facebook": "Facebook:"
+    "label-facebook": "Facebook:",
+    "phone-number": "Phone number:"
   },
   ms: {
     "header-title": "Kau Sing Farmhouse",
@@ -65,7 +66,7 @@ const translations = {
     "rooms-title": "🏠 Bilik (Hujung minggu cepat penuh!)",
     "camping-title": "🏕 Kehidupan Berkhemah",
     "camping-price": "RM20/seorang/malam",
-    "deluxe-title": "🌟 Ruang Acara Mewah",
+    "public-hall-title": "Sewaan Ruang Acara",
     "public-hall-title": "Dewan Awam Rumah Ladang",
     "deluxe-price": "RM3500++ sehari",
     "contact-title": "📬 Hubungi Kami",
@@ -115,7 +116,8 @@ const translations = {
     "event-li-photo": "✅ Peluang bergambar yang cantik di seluruh kawasan",
     "event-highlight": "Nikmati <strong>pengalaman eksklusif</strong> di tempat percutian desa yang tenang dan penuh kenangan.",
     "label-address": "Alamat:",
-    "label-facebook": "Facebook:"
+    "label-facebook": "Facebook:",
+    "phone-number": "Nombor telefon:"
   },
   zh: {
     "header-title": "高升农家乐",
@@ -125,7 +127,7 @@ const translations = {
     "camping-title": "🏕 露营生活",
     "camping-price": "每人每晚 RM20",
     "deluxe-title": "🌟 豪华活动空间",
-    "public-hall-title": "农庄公共大厅",
+    "public-hall-title": "活动场地租赁",
     "deluxe-price": "每天 RM3500++",
     "contact-title": "📬 联系我们",
     "book-now": "立即预订",
@@ -174,7 +176,8 @@ const translations = {
     "event-li-photo": "✅ 整个场地均适合拍照打卡",
     "event-highlight": "在安静的乡间度假地享受<strong>专属体验</strong>，为您创造难忘时刻。",
     "label-address": "地址：",
-    "label-facebook": "脸书："
+    "label-facebook": "脸书：",
+    "phone-number": "电话号码："
   }
 };
 
